@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEMH Intervention Program</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Brain-Strength Program!</h1>
+        <p>Let's learn about your emotions, brain, and strengths!</p>
+    </header>
+
+    <div class="container">
+        <!-- Feelings Check-in Section -->
+        <section class="check-in">
+            <h2>Daily Feelings Check-In</h2>
+            <p>How are you feeling today?</p>
+            <div id="emotions">
+                <button class="emotion-btn" data-feeling="happy">😊 Happy</button>
+                <button class="emotion-btn" data-feeling="sad">😢 Sad</button>
+                <button class="emotion-btn" data-feeling="angry">😡 Angry</button>
+                <button class="emotion-btn" data-feeling="frustrated">😖 Frustrated</button>
+                <button class="emotion-btn" data-feeling="excited">😃 Excited</button>
+            </div>
+            <p id="selected-feeling">You are feeling: </p>
+        </section>
+
+        <!-- Learn About Your Brain Section -->
+        <section class="brain-section">
+            <h2>Learn About Your Brain</h2>
+            <div class="brain-info">
+                <p>Your brain has two important parts that help you every day:</p>
+                <ul>
+                    <li><strong>Upstairs Brain (Prefrontal Cortex):</strong> Helps you think, make decisions, and focus.</li>
+                    <li><strong>Downstairs Brain (Amygdala):</strong> Reacts when you feel scared, angry, or upset.</li>
+                </ul>
+                <p>When your downstairs brain gets too strong, you might feel like running away or getting angry. But you can help calm your brain down!</p>
+                <button id="learn-more-brain">Learn More About My Brain</button>
+            </div>
+        </section>
+
+        <!-- Daily Activities Section -->
+        <section class="daily-activity">
+            <h2>Today's Activity</h2>
+            <p id="activity-content">Let’s start by practicing deep breathing. Take 5 slow breaths. Ready? Go!</p>
+            <button id="next-activity">Next Activity</button>
+        </section>
+
+        <!-- Strength Focus Section -->
+        <section class="strength-focus">
+            <h2>Your Strengths</h2>
+            <p>What are you good at?</p>
+            <textarea id="strength-input" placeholder="Write down your strengths here..."></textarea>
+            <button id="save-strengths">Save My Strengths</button>
+            <p id="saved-strengths"></p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
